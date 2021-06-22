@@ -1,9 +1,28 @@
 package exam;
 
-public class ConvertToBinary {
-
-  public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
+public class ConvertToBinary{
+static void binary(int[] bin,int id)
+{
+  for(int i=id-1;i>=0;i--)
+ System.out.print(bin[i] + " ");
+  
+  }
+  public static void decimal(int num)
+  {
+    int[] binary = new int[35];
+    int id = 0;
+    while(num>0)
+    {
+      binary[id++] = num % 2;
+      num = num / 2;
+    }
+    binary(bin,id);
+  }
+  public static void main(String[] args)
+  {
+    int num = 35;
+    decimal(num);
   }
 }
+
+
